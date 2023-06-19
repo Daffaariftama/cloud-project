@@ -1,13 +1,6 @@
 
 // menampilkan card
-fetch('http://13.250.41.144:9000/notes',{
-  method: 'GET',
-  mode: 'cors', // Mengizinkan permintaan lintas asal (CORS)
-  headers: {
-    'Content-Type': 'application/json',
-    // Tambahkan header lain yang diperlukan
-  },
-})
+fetch('http://13.250.41.144:9000/notes',)
   .then((result) => result.json())
   .then((data) => {
     console.log(data.data.notes);
